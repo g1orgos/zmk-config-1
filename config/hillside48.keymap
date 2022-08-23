@@ -37,7 +37,7 @@
                         bindings = <
 &kp  TAB      &kp  Q        &kp  W        &kp  E        &kp  R        &kp  T                                                                         &kp  Y        &kp  U        &kp  I        &kp  O        &kp  P        &kp  BSPC
 &kp  LCTRL    &kp  A        &kp  S        &kp  D        &kp  F        &kp  G                                                                         &kp  H        &kp  J        &kp  K        &kp  L        &kp  SQT      &kp  ENTER  
-&kp  LSHFT    &kp  Z        &kp  X        &kp  C        &kp  V        &kp  B        &kp  CAPS                                          &kp  MINUS    &kp  N        &kp  M        &kp  COMMA    &kp  DOT      &kp  SLASH    &kp  RSHFT
+&kp  LSHFT    &kp  Z        &kp  X        &kp  C        &kp  V        &kp  B        &kp  CAPS                                          &kp  MINUS    &kp  N        &kp  M        &kp  COMMA    &kp  DOT      &kp  SLASH    &mt  RSHFT SEMI
                             &kp  K_CMENU                &kp  LGUI     &kp  LALT     &mo  SYM_L    &kp   ESC              &kp DEL       &kp  SPACE    &mo  NUM_L    &kp  MINUS                  &kp  SEMI   
                         >;
 			
@@ -89,9 +89,9 @@
  * ----------------|       |-------|       |       |       |       |---| ADJ_L |       |       |       |-------| CTRL  |----------------
  */
                         bindings = <
-&kp  HOME     &kp  EXCL     &kp  AT       &kp  HASH     &kp  DOLLAR   &kp  PERCENT                                                                   &kp  CARET    &kp  HOME     &kp  UP       &kp  END      &kp  RPAR     &trans
-&kp  END      &kp  LGUI     &kp  LALT     &kp  LCTRL    &kp  LSHFT    &kp  PG_UP                                                                     &kp  PG_UP    &kp  LEFT     &kp  DOWN     &kp  RIGHT    &kp  BSLH     &trans
-&trans        &kp  Undo     &kp  Cut      &kp  Copy     &kp  Paste    &kp  PG_DN    &sk  RALT                                          &kp  K_APP    &kp  PG_DN    &kp  PLUS     &kp  LBKT     &kp  RBKT     &kp  PIPE     &trans
+&kp  TAB     &kp  EXCL     &kp  AT       &kp  HASH     &kp  DOLLAR   &kp  PERCENT                                                                   &kp  CARET    &kp  HOME     &kp  UP       &kp  END      &kp  RPAR     &trans
+&kp  LCTRL   &kp  LGUI     &kp  LALT     &kp  LCTRL    &kp  LSHFT    &kp  PG_UP                                                                     &kp  PG_UP    &kp  LEFT     &kp  DOWN     &kp  RIGHT    &kp  BSLH     &trans
+&kp  LSHFT   &kp  Undo     &kp  Cut      &kp  Copy     &kp  Paste    &kp  PG_DN    &sk  RALT                                          &kp  K_APP    &kp  PG_DN    &kp  PLUS     &kp  LBKT     &kp  RBKT     &kp  PIPE     &trans
                             &trans                      &trans        &trans        &trans        &trans                 &mo  ADJ_L    &trans        &trans        &trans                      &kp  RCTRL    
                         >;
 			
@@ -107,10 +107,10 @@
  * ----------------|       |-------|       |       |       | ADJ_L |---|       |       |       |       |-------| CTRL  |----------------
  */
                         bindings = <
-&kp  F11      &kp  N1       &kp  N2       &kp  N3       &kp  N4       &kp  N5                                                                        &kp   N6      &kp   N7      &kp   N8      &kp   N9      &kp  N0       &trans
-&kp  F12      &kp  EXCL     &kp  AT       &kp  HASH     &kp  DOLLAR   &kp  PERCENT                                                                   &kp  CARET    &kp  AMPS     &kp  ASTRK    &kp  LPAR     &kp  RPAR     &trans
-&trans        &kp  F1       &kp  F2       &kp  F3       &kp  F4       &kp  F5     &kp INS                                              &kp  F6       &kp  F7       &kp  F8       &kp  F9       &kp  F10      &kp DEL
-                            &trans                      &trans        &trans        &trans        &mo ADJ_L              &trans        &trans        &trans        &kp  LBRC                   &kp  RBRC   
+&kp  TAB      &kp  N1       &kp  N2       &kp  N3       &kp  N4       &kp  N5                                                                        &kp   N6      &kp   N7      &kp   N8      &kp   N9      &kp  N0       &trans
+&kp  LCTRL    &kp  EXCL     &kp  AT       &kp  HASH     &kp  DOLLAR   &kp  PERCENT                                                                   &kp  CARET    &kp  AMPS     &kp  ASTRK    &kp  LPAR     &kp  RPAR     &trans
+&kp  LSHFT    &kp  F1       &kp  F2       &kp  F3       &kp  F4       &kp  F5     &kp INS                                              &kp  F6       &kp  F7       &kp  F8       &kp  F9       &kp  F10      &kp DEL
+                            &kp KP_MULTIPLY             &kp KP_DIVIDE   &kp KP_PLUS    &kp KP_MINUS    &mo ADJ_L                       &kp LALT      &trans        &trans        &kp  LBRC                   &kp  RBRC   
                         >;
 			
                         sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
